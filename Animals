@@ -1,0 +1,51 @@
+package mathoperater;
+
+public class Animals {
+
+	public static void main(String[] args) {
+		String name;
+		animal Schmongiode;
+		animal billy;
+		animal fluffy;
+		name="Schmongiode";
+		Schmongiode=new animal();
+		billy=new animal();
+		fluffy=new animal();
+		Schmongiode.type="Humaniod creature";
+		Schmongiode.color="light brown";
+		Schmongiode.feet="3.5";
+		Schmongiode.isGod=true;
+		Schmongiode.canFly=true;
+		Schmongiode.says="Ki sa ki fè se pou Bruh ?, Èske fè pa dwe byen";
+		Schmongiode.eats="people who speak german";
+		System.out.println(Schmongiode.type);
+		System.out.println(Schmongiode.isGod);
+		System.out.println(Schmongiode.canFly);
+		fluffy.type="dog";
+		fluffy.isGod=false;
+		fluffy.canFly=false;
+		System.out.println(fluffy.isGod);
+		System.out.println(fluffy.canFly);
+		billy.type="Human";
+		billy.color="green";
+		billy.feet="6.1";
+		billy.isGod=false;
+		billy.canFly=true;
+		billy.says="hello";
+		billy.eats="fruits and meats";
+		System.out.println(billy.type);
+		System.out.println(billy.isGod);
+		System.out.println(billy.canFly);
+		
+	}
+
+}
+class animal{
+	String type;
+	String color;
+	String feet;
+	boolean isGod;
+	boolean canFly;
+	String says;
+	String eats;
+}
