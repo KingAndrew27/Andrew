@@ -1,0 +1,22 @@
+package mathoperater;
+
+import java.util.Scanner;
+
+public class YourFavoriteCity {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the name of your favorite city");
+		String FavCity=("Anchorage");
+		Scanner sc= new Scanner(System.in);
+		FavCity = sc.nextLine();
+		System.out.println("That has "+FavCity.length()+" letters in it");
+		System.out.println(FavCity.toUpperCase());
+		System.out.println(FavCity.toLowerCase());
+		System.out.println("The initial is "+FavCity.charAt(0));
+		System.out.println("The last three letters are "+FavCity);
+		String text=FavCity;
+		System.out.print(text.substring(0,3));
+		
+	}
+
+}
