@@ -1,0 +1,55 @@
+package MathOperater;
+
+public class Banking {
+
+	public static void main(String[] args) {
+		
+		BankAccount myMoney=new BankAccount(500,9999);
+		myMoney.deposit(200);
+		myMoney.deposit(-50);
+		myMoney.deposit(10);
+		
+	}
+}
+
+class BankAccount{
+	private double balance;
+	private int pin;
+	
+	public BankAccount(double startingBalence,int newPin) {
+		balance=startingBalence;
+		pin=newPin;
+	}
+	
+	public double getBalance() {
+		return balance;
+	}
+	
+	public void withdraw(double amount,int p) {
+		if(p == pin) {
+			if(amount>0) {
+			balance = balance-amount;
+			System.out.println("Money dispencd.  New balance: $"+balance);
+		}
+			else {System.out.println("Error: Amount must be greater than $0");
+				
+			}
+		}
+		else {
+			System.out.println("Error: PIN incorrect");
+		}
+		
+	}
+	public void deposit(double amount) {
+		if(amount>0) {
+			balance=balance+amount;
+			System.out.println("Money deposited.  New balance: $"+balance);
+		}
+		else {
+			System.out.println("Error: Amount must be greater than $0");
+		}
+	}
+
+	}
+
+
